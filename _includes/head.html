@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/main.css">
+  {% if page.stylesheet %}
+    <link rel="stylesheet" href="{{ page.stylesheet }}">
+  {% endif %}
   <link rel="stylesheet" href="/css/style.css">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
