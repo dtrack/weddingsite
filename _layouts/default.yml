@@ -5,6 +5,8 @@
 
   <body>
     {{ content }}
+
+    {% include javascripts.html %}
   </body>
 
 </html>

@@ -2,7 +2,7 @@
 # script builds the jekyll site on the develop branch, checkout master and
 # puts the static file into master, goes back to develop at the end
 
-TO_DELETE = _site _config.yml _includes _layouts Gemfile.lock Makefile _data _plugins Gemfile css/*.scss _sass
+TO_DELETE = _config.yml _includes _layouts Gemfile.lock Makefile _data _plugins Gemfile css/*.scss _sass js/
 DATE = $(shell date +%I:%M\ %p)
 CHECK = \033[32m✔\033[39m
 HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
@@ -15,11 +15,11 @@ deploy:
 	@echo "\n${HR}"
 	@echo "Deploying website..."
 	@echo "${HR}\n"
-	@jekyll build
+	@JEKYLL_ENV=production jekyll build
 	@echo "Generating files...                ${CHECK} Done"
 	@git checkout master
 	@echo "Switch to master...                ${CHECK} Done"
-	@cp -r _site/* . && rm -rf ${TO_DELETE}
+	@rm -rf ${TO_DELETE} && cp -r _site/* .  && rm -rf _site
 	@echo "Updating files...                  ${CHECK} Done"
 	@git add --all . && git commit -m "Regenerate files (jekyll deployment)"
 	@echo "Committing files...                ${CHECK} Done"
