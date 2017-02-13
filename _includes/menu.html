@@ -1,0 +1,46 @@
+<!-- responsive-tab only shown on mobile -->
+<div class="resonsive-tab">
+  <div class="header">
+    <div class="jnp-mobile-menu">
+      <div class="jnp-logo">
+        <a href="index.html" data-menu="index">
+          <h2>
+            <span class="jnp-logo-pooja">Pooja </span>
+            <span class="jnp-logo-and">&</span>
+            <span class="jnp-logo-jeremy">Jeremy</span></h2>
+        </a>
+      </div>
+      <div class="hamburger pull-right"> <img src="assets/img/layout/menu-alt.png" alt="Navicon"> </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<div id="dl-menu" class="section1 navbar navbar-default navbar-fixed-top">
+  <div class="vertical-menu">
+    <!-- <div class="logo-s2"> <a href="index.html" data-menu="index"> <img src="images/logo.png" alt="logo"> </a> </div> -->
+    <div class="jnp-logo">
+      <a href="index.html" data-menu="index">
+        <h2>
+          <span class="jnp-logo-pooja">Pooja </span>
+          <span class="jnp-logo-and">&</span>
+          <span class="jnp-logo-jeremy">Jeremy</span></h2>
+      </a>
+    </div>
+    <div class="ver-menu">
+      <ul class="dl-menu nav navbar-nav menubar-s2 horizontal_iconmenu" style="position: relative;">
+        {% for item in site.data.menu %}
+          <li
+              class="hvr-overline-from-center {% if page.active == item.name %}hover_active{% endif %}">
+            <a href="{{ item.link }}" data-menu="{{ item.name }}">
+              {% assign icon = 'svgs/' | append: item.icon | append: '.html' %}
+              {% include {{ icon }} %}
+              <div class="clearfix"></div>
+              {{ item.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
