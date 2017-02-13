@@ -16,38 +16,10 @@ $(document).on('ready', function () {
         }, 500);
     });
 
-    $('.other-menu').on('mouseenter', function () {
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0, 84px, 0px)', '-webkit-transform': 'translate3d(0, 84px, 0px)', '-ms-transform': 'translate3d(0, 84px, 0px)', '-o-transform': 'translate3d(0, 84px, 0px)', 'transform': 'translate3d(0, 84px, 0px)' }, 'fast');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0, 0px, 0px)').css('-webkit-transform', 'translate3d(0, 84px, 0px)').css('-ms-transform', 'translate3d(0, 84px, 0px)').css('-o-transform', 'translate3d(0, 84px, 0px)').css('transform', 'translate3d(0, 84px, 0px)');
-        }, 200);
-    });
-
-    $('.other-menu').on('mouseenter', function () {
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0px, 0px, 0px)', '-webkit-transform': 'translate3d(0px, 0px, 0px)', '-ms-transform': 'translate3d(0px, 0px, 0px)', '-o-transform': 'translate3d(0px, 0px, 0px)', 'transform': 'translate3d(0px, 0px, 0px)', }, 'fast');
-        $('.other-menu').addClass('hover_active');
-        $('.other-menu a').addClass('hover_active selected');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0px, 0px, 0px)').css('-webkit-transform', 'translate3d(0px, 0px, 0px)').css('-ms-transform', 'translate3d(0px, 0px, 0px)').css('-o-transform', 'translate3d(0px, 0px, 0px)').css('transform', 'translate3d(0px, 0px, 0px)');
-        }, 200);
-
-
-    }).on('mouseleave', function () {
-
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0px, -400px, 0px)', '-webkit-transform': 'translate3d(0px, -400px, 0px)', '-ms-transform': 'translate3d(0px, -400px, 0px)', '-o-transform': 'translate3d(0px, -400px, 0px)', 'transform': 'translate3d(0px, -400px, 0px)' }, 'fast');
-        $('.other-menu').removeClass('hover_active');
-        $('.other-menu a').removeClass('hover_active selected');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0px, -400px, 0px)').css('-webkit-transform', 'translate3d(0px, -400px, 0px)').css('-ms-transform', 'translate3d(0px, -400px, 0px)').css('-o-transform', 'translate3d(0px, -400px, 0px)').css('transform', 'translate3d(0px, -400px, 0px)');
-        }, 200);
-    });
-
     // JavaScript Document
     var today = new Date();
 
-    var target = new Date(today);
-    target.setDate(120); // Set no. of days from today
-    target.setHours(0, 12, 0, 0);
+    var target = new Date(Date.parse('2017-09-09T14:00:00+01:00'));
 
     // Countdown start from yesterday
     var yesterday = new Date(today);
@@ -174,7 +146,7 @@ $(document).on('ready', function () {
     if ($.find('.fancybox').length) {
         $('.fancybox').fancybox();
     }
-    //gallery option 2 
+    //gallery option 2
 
     if ($.find('.fancybox2').length) {
         $('.fancybox2').fancybox();
