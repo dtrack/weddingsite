@@ -17,23 +17,6 @@ $(document).on('ready', function () {
     });
 
     // JavaScript Document
-    var today = new Date();
-
-    var target = new Date(Date.parse('2017-09-09T14:00:00+01:00'));
-
-    // Countdown start from yesterday
-    var yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1); // Day counter will start from yesteday
-    yesterday.setHours(0, 0, 0, 0);
-    if ($.find('.countdown').length) {
-        $('.countdown').final_countdown({
-            'start': yesterday.getTime() / 1000,
-            'end': target.getTime() / 1000,
-            'now': today.getTime() / 1000
-        }, function () {
-            // Finish Callback
-        });
-    }
     $(window).load(function () {
         if ($.find('.gridlayout').length) {
             $('.gridlayout').isotope({
@@ -46,18 +29,6 @@ $(document).on('ready', function () {
         }
     });
 
-
-    /*Timer for wedding page*/
-    if ($.find('#example').length) {
-        $('#example').countdown({
-            date: '04/29/2017 23:59:59',
-            offset: 0,
-            day: 'Day',
-            days: 'Days'
-        }, function () {
-
-        });
-    }
     $('.hamburger').on('click', function () {
         if ($('.navbar-fixed-top').css('right') == '-100px') {
             $('.navbar-fixed-top').animate({ right: '0px' }, 'slow');
@@ -243,39 +214,41 @@ $(document).on('ready', function () {
 
 
 
-    window.wow = new WOW({
+    var wow = new WOW({
         animateClass: 'animated',
         offset: 0,
         callback: function (box) {
         }
     });
-
     wow.init();
 
+    $('.pt-page').fadeIn(
+      function () {
+        var today = new Date();
+
+        var target = new Date(Date.parse('2017-09-09T14:00:00+01:00'));
+        var start = new Date(Date.parse('2016-09-09T14:00:00+01:00'));
+        $('.countdown').final_countdown({
+            'start': start.getTime() / 1000,
+            'end': target.getTime() / 1000,
+            'now': today.getTime() / 1000
+        }, function () {
+            // Finish Callback
+        });
+      }
+    );
 
 });
 
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-36251023-1']);
-_gaq.push(['_setDomainName', 'jqueryscript.net']);
-_gaq.push(['_trackPageview']);
 
-(function () {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
-
-document.onreadystatechange = function () {
-    var state = document.readyState
-    if (state == 'interactive') {
-    } else if (state == 'complete') {
-        setTimeout(function () {
-            $('#load').animate({ 'opacity': '0' }, 'fast');
-
-        }, 1000);
-    }
-}
+// document.onreadystatechange = function () {
+//     var state = document.readyState
+//     if (state == 'interactive') {
+//     } else if (state == 'complete') {
+//         setTimeout(function () {
+//             $('#load').animate({ 'opacity': '0' }, 'fast');
+//
+//         }, 1000);
+//     }
+// }

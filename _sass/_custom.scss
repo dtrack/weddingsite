@@ -1,3 +1,6 @@
+$colorRed: #e32b42;
+$colorBlue: #00afc5;
+
 /****************************************/
 /*                MENU                  */
 /****************************************/
@@ -50,15 +53,15 @@
   }
 
   span.jnp-logo-pooja {
-    color: #e32b42;
+    color: $colorRed;
   }
 
   span.jnp-logo-and {
-    color: #e32b42;
+    color: $colorRed;
   }
 
   span.jnp-logo-jeremy {
-    color: #00afc5;
+    color: $colorBlue;
   }
 }
 
@@ -71,5 +74,48 @@
 
 .pt-page-home {
 
+}
 
+.bg-image {
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bg-home {
+	background: url("/assets/img/home-couple-picture.jpg") no-repeat center center;
+}
+
+.bg-itinerary {
+  background: url("/assets/img/home-couple-picture.jpg") no-repeat center center;
+}
+
+
+/****************************************/
+/*             ITINERARY                */
+/****************************************/
+.timeline {
+  .timeline-heading {
+    margin-bottom: 15px;
+  }
+  .timeline-img {
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    @media (max-width: 1024px) {
+      font-size: 1.3em;
+    }
+  }
+  h4 {
+    margin-top: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: $colorBlue;
+    font-size: 1.2em;
+    @media (max-width: 1024px) {
+      font-size: 1.1em;
+    }
+  }
 }
