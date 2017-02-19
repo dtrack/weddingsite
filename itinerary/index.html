@@ -2,6 +2,7 @@
 layout: default
 
 active: Itinerary
+title: Itinerary
 
 items:
   - title: Civil Union Ceremony <em>(Mariage Civil)</em>
@@ -10,7 +11,8 @@ items:
     location: City Hall of Saint-Cyr-Sur-Loire
     content: Hôtel de Ville <br>
       Parc de la Perraudière <br>
-      37540 Saint-Cyr-sur-Loire <br>France
+      37540 Saint-Cyr-sur-Loire <br>France <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16487.082438669953!2d0.6596969706965022!3d47.40081277080753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire!5e0!3m2!1sen!2sus!4v1487507041493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     image:
       src: itinerary/mairie-saint-cyr.jpg
       alt: Saint-Cyr-Sur-Loire City Hall
@@ -20,7 +22,10 @@ items:
     location: Domaine de la Fougeraie
     content: Domaine de la Fougeraie <br>
       Route departementale 54<br>
-      37370 Saint-Paterne-Racan <br>France
+      37370 Saint-Paterne-Racan <br>France <br><br>
+      We will depart 30 minutes - an hour after the civil union ceremony
+      and head to the Domaine de la Fougeraie.
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d172558.2545240446!2d0.35960149312063056!3d47.485574296865906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47e2d55448bd1ddb%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire%2C+H%C3%B4tel+de+Ville%2C+Parc+de+la+Perraudi%C3%A8re%2C+37540+Saint-Cyr-sur-Loire%2C+France!3m2!1d47.399200799999996!2d0.6673201!4m5!1s0x47e2cf3656efd583%3A0xeaa123d2c3292b96!2sDomaine+de+la+Fougeraie%2C+Saint-Paterne-Racan%2C+France!3m2!1d47.577881999999995!2d0.41881399999999996!5e0!3m2!1sen!2sus!4v1487507230680" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     diaporama:
       - src: itinerary/chateau-fougeraie.jpg
         alt: Domaine de la Fougeraie Castle
@@ -67,9 +72,7 @@ items:
     <div class="bg-main-image-overlay-2">
       <div class="main-section-s2">
         <div class="col-md-12">
-          <div class="page-title wow fadeInUp" data-class="fadeInUp">
-            <h2>Itinerary<span><i class="glyphicon glyphicon-heart"></i></span></h2>
-          </div>
+          {% include page_title.html %}
           <div class="clearfix"></div>
           <div class="container-fluid">
             <ul class="timeline">

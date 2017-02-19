@@ -13,6 +13,6 @@
 - name: About Locale
   link: /about-locale
   fa_icon: globe
-- name: RSVP
+- name: RSVP & Contact
   link: /rsvp
   fa_icon: pencil
