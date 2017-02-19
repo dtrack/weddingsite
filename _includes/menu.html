@@ -33,8 +33,12 @@
           <li
               class="hvr-overline-from-center {% if page.active == item.name %}hover_active{% endif %}">
             <a href="{{ site.github.url }}{{ item.link }}" data-menu="{{ item.name }}">
+              {% if item.icon %}
               {% assign icon = 'svgs/' | append: item.icon | append: '.html' %}
               {% include {{ icon }} %}
+              {% else %}
+              <i class="fa fa-{{ item.fa_icon }} fa-2x"></i>
+              {% endif %}
               <div class="clearfix"></div>
               {{ item.name }}
             </a>

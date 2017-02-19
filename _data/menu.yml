@@ -1,18 +1,18 @@
 - name: Home
   link: /
-  icon: home
+  fa_icon: home
 - name: Itinerary
   link: /itinerary
-  icon: couple
+  fa_icon: calendar
 - name: Gallery
   link: /gallery
-  icon: camera
+  fa_icon: camera
 - name: Travel
   link: /travel
-  icon: heart
+  fa_icon: suitcase
 - name: About Locale
   link: /about-locale
-  icon: group
+  fa_icon: globe
 - name: RSVP
   link: /rsvp
-  icon: pen
+  fa_icon: pencil

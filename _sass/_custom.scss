@@ -1,6 +1,8 @@
 $colorRed: #e32b42;
 $colorBlue: #00afc5;
 
+$color_menu: $colorRed;
+
 /****************************************/
 /*                MENU                  */
 /****************************************/
@@ -16,6 +18,13 @@ $colorBlue: #00afc5;
 .navbar-nav > li > a {
   padding-top: 10px !important;
   padding-bottom: 0 !important;
+
+  svg {
+    fill: $color_menu;
+  }
+  i.fa {
+    color: lighten($color_menu, 10%);
+  }
 }
 
 .ver-menu, .ver-menu-s2 {
@@ -88,7 +97,16 @@ $colorBlue: #00afc5;
 }
 
 .bg-itinerary {
-  background: url("/assets/img/home-couple-picture.jpg") no-repeat center center;
+  background: url("/assets/img/itinerary-couple-picture.jpg") no-repeat center center;
+}
+
+// portrait medias
+@media screen
+  and (max-device-width: 320px)
+  and (max-device-height: 640px)
+  and (orientation: portrait) {
+
+
 }
 
 
@@ -107,6 +125,10 @@ $colorBlue: #00afc5;
     font-size: 1.5em;
     @media (max-width: 1024px) {
       font-size: 1.3em;
+    }
+    em {
+      font-style: italic;
+      font-size: 80%;
     }
   }
   h4 {
