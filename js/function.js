@@ -124,54 +124,8 @@ $(document).on('ready', function () {
     }
     /*-----------------------------------people page slider------------------------*/
 
-    $('.the-people-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        autoplay: true,
-        responsive: [
-  {
-      breakpoint: 981,
-      settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-      }
-  },
 
-   {
-       breakpoint: 769,
-       settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false
-       }
-   },
-    {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false
-        }
-    },
-   {
-       breakpoint: 361,
-       settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false
-       }
-   }
-   // You can unslick at a given breakpoint now by adding:
-   // settings: 'unslick'
-   // instead of a settings object
-        ]
-    });
-
-    $('.ceremony-slider').slick({
+    $('.itinerary-slider').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -235,6 +189,7 @@ $(document).on('ready', function () {
         }, function () {
             // Finish Callback
         });
+
       }
     );
 
