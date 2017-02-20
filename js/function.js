@@ -115,13 +115,11 @@ $(document).on('ready', function () {
     /*-----photo gallery------------*/
 
     if ($.find('.fancybox').length) {
-        $('.fancybox').fancybox();
+        $('.fancybox').fancybox({
+          type: 'image',
+        });
     }
-    //gallery option 2
 
-    if ($.find('.fancybox2').length) {
-        $('.fancybox2').fancybox();
-    }
     /*-----------------------------------people page slider------------------------*/
 
 
@@ -166,8 +164,6 @@ $(document).on('ready', function () {
         ]
     });
 
-
-
     var wow = new WOW({
         animateClass: 'animated',
         offset: 0,
@@ -189,21 +185,7 @@ $(document).on('ready', function () {
         }, function () {
             // Finish Callback
         });
-
       }
     );
 
 });
-
-
-
-// document.onreadystatechange = function () {
-//     var state = document.readyState
-//     if (state == 'interactive') {
-//     } else if (state == 'complete') {
-//         setTimeout(function () {
-//             $('#load').animate({ 'opacity': '0' }, 'fast');
-//
-//         }, 1000);
-//     }
-// }
