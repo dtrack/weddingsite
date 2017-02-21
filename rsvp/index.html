@@ -1,0 +1,134 @@
+---
+layout: default
+
+active: RSVP & Contact
+title: Rsvp & Contact
+---
+
+<div class="pt-page pt-page-rsvp display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-rsvp"></div>
+    <div class="bg-main-image-overlay-2">
+      <div class="main-section-s2">
+        <div class="col-md-12">
+          {% include page_title.html %}
+          <div class="container">
+            <div class="rsvp">
+              <div class="rsvp-form white-box wow fadeInUp col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" data-class="fadeInUp">
+                <p class="jnp-rsvp-intro">
+                  Please kindly reply by<br>
+                  <span>01 June 2017</span>
+                </p>
+                <p>
+                  Due to the travel, we will not be having a registry and we will
+                  not be accepting any gifts. Your attendance to our wedding is
+                  more than enough. However, if you feel you must give us something
+                  please feel free to provide a simple card or envelope with
+                  cash or check. Thank you.
+                </p>
+                <p>
+                  For any question, please contact us at
+                  <strong>jeremy[at]jhenault[dot]net</strong>
+                  or <strong>me[at]thepoojashah[dot]com </strong>
+                </p>
+                <div id="Success" class="successalert" style=" display:none;">
+                  <strong>Thank you</strong>.
+                </div>
+                <div id="Error" class="errorelert" style="display:none;">
+                  <strong>Error occurred while sending email.</strong>
+                  Try again later.
+                </div>
+                <form class="form floating-label text-left form-validate" name="rsvp-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" required data-rule-minlength="2" />
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" name="phoneNumber" data-rule-number="true" required />
+                    <label for="phoneNumber">Contact Number</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" data-rule-email="true" required />
+                    <label for="email">Email Address</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="isAttending" class="form-control select2-list dirty" required>
+                          <option value="">Select Presense</option>
+                          <option value='true'>Yes</option>
+                          <option value='false'>No</option>
+                        </select>
+                        <label for="isAttending">attending?</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="countAdults" class="form-control select2-list dirty" required>
+                          <option value=""># Adult(s)</option>
+                          <option value='0'>0</option>
+                          <option value='1'>1</option>
+                          <option value='2'>2</option>
+                        </select>
+                        <label for="countAdults">Adults</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="countChildren" class="form-control select2-list dirty" required>
+                          <option value=""># Child(ren)</option>
+                          <option value='0'>0</option>
+                          <option value='1'>1</option>
+                          <option value='2'>2</option>
+                          <option value='3'>3</option>
+                          <option value='4'>4</option>
+                        </select>
+                        <label for="countChildren">Children</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select name="countBeds" class="form-control select2-list dirty" required>
+                          <option value=""># Bed(s)</option>
+                          <option value='0'>0</option>
+                          <option value='1'>1</option>
+                          <option value='2'>2</option>
+                          <option value='3'>3</option>
+                        </select>
+                        <label for="countBeds">Beds needed on wedding night ?</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select name="countVeggieMenu" class="form-control select2-list dirty" required>
+                          <option value=""># Vegetarian Adult Meal(s)</option>
+                          <option value='0'>No! French food is amazing</option>
+                          <option value='1'>Yes one please</option>
+                          <option value='2'>Yes two please</option>
+                        </select>
+                        <label for="countVeggieMenu">Need vegetarian menus (adults only) ?</label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="songChoice"></textarea>
+                    <label>🎶🎶 Any song you would like played during the party? 🎉🎉</label>
+                  </div>
+                  <div class="rsvp-button text-center">
+                    <button type="submit" class="hvr-sweep-to-right">SUBMIT</button>
+                    <div id="loading" style="display:none; padding-left:20px;">
+                      <img src="{{ site.github.url }}/assets/img/layout/ajax-loader.gif" alt="Loader">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

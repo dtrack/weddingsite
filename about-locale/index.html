@@ -1,0 +1,226 @@
+---
+layout: default
+
+active: About Locale
+title: About Locale
+
+slider:
+  - src: about-locale/tours-mairie.jpg
+    alt: City Hall of Tours
+  - src: about-locale/chenonceau.jpg
+    alt: Château de Chenonceau
+  - src: about-locale/chambord.jpg
+    alt: Château de Chambord
+  - src: about-locale/place-plumereau.jpg
+    alt: Place (square) Plumerau, downtown Tours
+  - src: about-locale/rigny-usse.jpg
+    alt: Château d'Ussé
+  - src: about-locale/azay.jpg
+    alt: Château d'Azay-le-Rideau
+  - src: about-locale/cave-monplaisir.jpg
+    alt: Cave Monplaisir
+---
+
+<div class="pt-page pt-page-about-locale display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-image bg-about-locale"></div>
+    <div class="page-scroll">
+      <div class="bg-main-image-overlay-2">
+        <div class="main-section-s2">
+          <div class="container">
+            {% include page_title.html %}
+            <div class="row">
+              <div class="col-md-7 col-md-push-5">
+                <div class="white-box jnp-section">
+                  <h2>Tours and the Loire Valley</h2>
+                  <p>
+                    Tours is a beautiful city that is worth visiting,
+                    you can admire artifacts from all eras dating back from
+                    gallo-roman period, to middle age and renaissance. Place
+                    Plumerau, the main square in "Le vieux Tours" (medieval
+                    district) is famous for its half-timbered buildings and
+                    its busy bars and restaurants.
+                    It is surrounded by some of the most beautiful castles
+                    of France, overseeing the Loire and Cher rivers,
+                    as well and many wineries.
+                  </p>
+                  <div class="about-locale-slider">
+                  {% for slide in page.slider %}
+                    <div>
+                      <img class="img-responsive"
+                        src="{{ site.github.url }}/assets/img/{{ slide.src }}"
+                        alt="{{ slide.alt }}" />
+                      <span>{{ slide.alt }}</span>
+                    </div>
+                  {% endfor %}
+                  </div>
+                  <p>
+                    We strongly recommend visiting at least one castle, below
+                    is a list of nearby castles:
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://www.chambord.org/en/" target="_blank">
+                        Chambord
+                      </a> (1 hour away):
+                      Jeremy's favorite, arguably the most beautiful
+                      French castle on the same level as Versailles.
+                    </li>
+                    <li>
+                      <a href="http://www.chenonceau.com/index.php/en" target="_blank">
+                        Chenonceau
+                      </a> (40 minutes away):
+                      Pooja's favorite, incredible castle that overpasses the Cher
+                      river.
+                    </li>
+                    <li>
+                      <a href="http://www.chateaudusse.fr/?lang=en" target="_blank">
+                        Rigny-Ussé
+                      </a> (40 minutes away):
+                      Castle that Charles Perauld had in mind when writing
+                      "The Sleeping Beauty".
+                    </li>
+                    <li>
+                      <a href="http://www.azay-le-rideau.fr/en/" target="_blank">
+                        Azay-le-Rideau
+                      </a> (25 minutes away):
+                      Beautiful Renaissance Castle
+                    </li>
+                  </ul>
+                  <p>
+                    You can also visit wineries and caves, there are many along the Loire,
+                    you can just stop by any that you see, visit the cave, taste some
+                    wine (usually for free), and buy some bottles for way cheaper than
+                    at the store (yes California I'm looking at you...).
+                    If you want pointers, here are a few:
+                  </p>
+                  <ul>
+                    <li>
+                      Chinon (40 minutes away):
+                      mediaval city with many caves such as
+                      <a href="http://www.chinon-valdeloire.com/decouvrir/visiter/chinon-et-sa-forteresse/chinon-cite-medievale/chinon-accessible/409619-les-caves-painctes"
+                        target="_blank">
+                        "Les Caves Painctes"
+                      </a> and
+                      <a href="http://cavemonplaisir.fr/" target="_blank">
+                        "La Caves Monplaisir"
+                      </a>. Chinon is known for its red wine.
+                    </li>
+                    <li>
+                      <a href="http://www.cave-montlouis.com/" target="_blank">Montlouis</a> (20 minutes away):
+                      City famous for its white wine.
+                    </li>
+                    <li>
+                      <a href="http://www.cavedevouvray.com/?Cle=en_GB" target="_blank">Vouvray</a> (20 minutes away):
+                      City famous for its sparkling wine.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 col-md-pull-7">
+                <div class="white-box jnp-section">
+                  <h2>Tips</h2>
+                  <p>
+                    Make sure to bring an international adapter to
+                    charge all of your electronics. You can find them on
+                    amazon,
+                    <a href="https://www.amazon.com/European-Adapter-Schuko-Germany-France/dp/B004SY5O5K/ref=sr_1_1?ie=UTF8&qid=1487584014&sr=8-1&keywords=french+power+adapter">
+                    such as this one</a>.
+                  </p>
+                  <h2>Paying in France</h2>
+                  <p>
+                    France accepts credit cards almost everywhere so the cheapest
+                    option is probably a no foreign transaction fee card. For
+                    cash transactions, it is better to withdraw euros directly at a
+                    bank ATM in France versus a currency exchange desk.
+                  </p>
+                  <p>
+                    Don't forget to notify your banks / credit card companies
+                    that you will be abroad or they will freeze your accounts.
+                  </p>
+                  <div class="text-center">
+                    <iframe src="https://themoneyconverter.com/MoneyConverter.aspx?from=USD&amp;to=EUR" style="width: 175px; height: 202px; border: none; background-color: #ffffff;" scrolling="no" marginwidth="0" marginheight="0"></iframe>
+                  </div>
+
+                  <h2>Common Translations</h2>
+                  <ul>
+                    <li>
+                      <strong>Bonjour</strong>
+                      <em>(bohn-zhoor)</em> -
+                      Hello (literally: good day)
+                    </li>
+                    <li>
+                      <strong>Au revoir</strong>
+                      <em>(oh-reh-vwar)</em> -
+                      Goodbye
+                    </li>
+                    <li>
+                      <strong>Je m'appelle...</strong>
+                      <em>(zhuh mah-pehl)</em> -
+                      My name is... (literally: I call myself)
+                    </li>
+                    <li>
+                      <strong>Comment vous appelez-vous?</strong>
+                      <em>(kohn-mahn voo zah-play voo)</em> -
+                      What is your name?
+                    </li>
+                    <li>
+                      <strong>Parlez lentement</strong>
+                      <em>(par-lay lehn-ta-mohn)</em> -
+                      Please speak slowly
+                    </li>
+                    <li>
+                      <strong>Je ne comprends pas</strong>
+                      <em>(jhuhn kom-prohn pah)</em> -
+                      I don't understand
+                    </li>
+                    <li>
+                      <strong>S'il vous plaît</strong>
+                      <em>(seel voo play)</em> -
+                      Please
+                    </li>
+                    <li>
+                      <strong>Merci</strong>
+                      <em>(mehr-see)</em> -
+                      Thank you
+                    </li>
+                    <li>
+                      <strong>De rien</strong>
+                      <em>(dah ree-ehn)</em> -
+                      You're welcome
+                    </li>
+                    <li>
+                      <strong>Excusez-moi</strong>
+                      <em>(ehk-kew-zay mwah)</em> -
+                      Excuse me
+                    </li>
+                    <li>
+                      <strong>Ça va?</strong>
+                      <em>(sah vah)</em> -
+                      How are you? (informal) or... I'm fine
+                    </li>
+                    <li>
+                      <strong>Oui / Non</strong>
+                      <em>(we / nohn)</em> -
+                      Yes / No
+                    </li>
+                    <li>
+                      <strong>Parlez-vous anglais?</strong>
+                      <em>(pahr-lay voo ahn-leh)</em> -
+                      Do you speak English
+                    </li>
+                    <li>
+                      <strong>Où sont les toilettes</strong>
+                      <em>(oo sahn lay twah-leht)</em> -
+                      Where are the restooms?
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

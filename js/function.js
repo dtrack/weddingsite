@@ -164,6 +164,49 @@ $(document).on('ready', function () {
         ]
     });
 
+    $('.about-locale-slider').show(function () {
+      $(this).slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: 'unslick'
+            // instead of a settings object
+          ]
+      });
+    });
+
     var wow = new WOW({
         animateClass: 'animated',
         offset: 0,
