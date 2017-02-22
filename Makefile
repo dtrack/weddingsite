@@ -20,7 +20,7 @@ deploy:
 	@echo "Generating files...                ${CHECK} Done"
 	@git checkout master
 	@echo "Switch to master...                ${CHECK} Done"
-	@rm -rf ${TO_DELETE} && cp -r _site/* .  && rm -rf _site && @rm -rf ${TO_DELETE}
+	@rm -rf ${TO_DELETE} && cp -r _site/* .  && rm -rf _site && rm -rf ${TO_DELETE_AFTER}
 	@echo "Updating files...                  ${CHECK} Done"
 	@git add --all . && git commit -m "Regenerate files (jekyll deployment)"
 	@echo "Committing files...                ${CHECK} Done"
