@@ -1,18 +1,18 @@
 - name: Accueil
   link: /fr
   fa_icon: home
-- name: Programme
-  link: /fr/programme
-  fa_icon: calendar
-- name: Gallerie
-  link: /fr/gallerie
-  fa_icon: camera
-- name: Visiter Tours
-  link: /fr/visiter-tours
-  fa_icon: globe
-- name: RSVP & Contact
-  link: /fr/rsvp
-  fa_icon: pencil
+# - name: Programme
+#   link: /fr/programme
+#   fa_icon: calendar
+# - name: Gallerie
+#   link: /fr/gallerie
+#   fa_icon: camera
+# - name: Visiter Tours
+#   link: /fr/visiter-tours
+#   fa_icon: globe
+# - name: RSVP & Contact
+#   link: /fr/rsvp
+#   fa_icon: pencil
 - name: English
   link: /
   fa_icon: language
