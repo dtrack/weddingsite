@@ -1,0 +1,142 @@
+
+items:
+  en:
+    - title: Civil Union Ceremony <em>(Mariage Civil)</em>
+      date: Sat 09 Sept 2017
+      time: 2:00pm
+      location: City Hall of Saint-Cyr-Sur-Loire
+      content: Hôtel de Ville <br>
+        Parc de la Perraudière <br>
+        37540 Saint-Cyr-sur-Loire <br>France <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16487.082438669953!2d0.6596969706965022!3d47.40081277080753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire!5e0!3m2!1sen!2sus!4v1487507041493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      image:
+        src: itinerary/mairie-saint-cyr.jpg
+        alt: Saint-Cyr-Sur-Loire City Hall
+    - title: Secular Ceremony <em>(Cérémonie Laïque)</em>
+      date: Sat 09 Sept 2017
+      time: 5:00pm
+      location: Domaine de la Fougeraie
+      content: Domaine de la Fougeraie <br>
+        Route departementale 54<br>
+        37370 Saint-Paterne-Racan <br>France <br><br>
+        We will depart 30 minutes - an hour after the civil union ceremony
+        and head to the Domaine de la Fougeraie.
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d172558.2545240446!2d0.35960149312063056!3d47.485574296865906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47e2d55448bd1ddb%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire%2C+H%C3%B4tel+de+Ville%2C+Parc+de+la+Perraudi%C3%A8re%2C+37540+Saint-Cyr-sur-Loire%2C+France!3m2!1d47.399200799999996!2d0.6673201!4m5!1s0x47e2cf3656efd583%3A0xeaa123d2c3292b96!2sDomaine+de+la+Fougeraie%2C+Saint-Paterne-Racan%2C+France!3m2!1d47.577881999999995!2d0.41881399999999996!5e0!3m2!1sen!2sus!4v1487507230680" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      diaporama:
+        - src: itinerary/chateau-fougeraie.jpg
+          alt: Domaine de la Fougeraie Castle
+        - src: itinerary/chateau-fougeraie-aerien.jpg
+          alt: Domaine de la Fougeraie Aerial View of the Castle
+        - src: itinerary/chevreuil.jpg
+          alt: Deer on the domain
+        - src: itinerary/chateau-fougeraie-nuit.jpg
+          alt: Domaine de la Fougeraie Castle by night
+    - title: Cocktail Hour <em>(Vin d'Honneur)</em>
+      date: Sat 09 Sept 2017
+      time: 6:00pm
+      location: Domaine de la Fougeraie
+      diaporama:
+        - src: itinerary/cocktail-1.jpg
+          alt: Cocktail
+        - src: itinerary/cocktail-2.jpg
+          alt: Cocktail 2
+        - src: itinerary/cocktail-3.jpg
+          alt: Cocktail 3
+        - src: itinerary/cocktail-4.jpg
+          alt: Cocktail 4
+      content: Cocktails and appetizers will be served shortly after the
+        ceremony.
+    - title: Reception <em>(Repas de Noces)</em>
+      date: Sat 09 Sept 2017
+      time: ~8:00pm
+      location: Domaine de la Fougeraie
+      content: International guests flying in from outside of France will have
+        a room for the night of the wedding. <br>
+        Please make note the wedding reception usually last until about 5-6am!
+    - title: Day After
+      date: Sun 10 Sept 2017
+      time: 10:00am
+      location: Domaine de la Fougeraie
+      content: A French style barbecue will be served on the grounds of the
+        domain.
+    - title: Tour of Tours <em>(TBD)</em>
+      date: Mon 11 Sept 2017
+      time: TBD
+      location: Tours
+      content: For those that are interested, Jeremy would love to show you around
+        the best city of France (according to him)!
+      image:
+        src: itinerary/tours-mairie.jpg
+        alt: Mairie de Tours
+  fr:
+    - title: Mariage Civil
+      date: Samedi 9 Septembre 2017
+      time: "14:00"
+      location: Mairie de Saint-Cyr-Sur-Loire
+      content: Hôtel de Ville <br>
+        Parc de la Perraudière <br>
+        37540 Saint-Cyr-sur-Loire <br>France <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16487.082438669953!2d0.6596969706965022!3d47.40081277080753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire!5e0!3m2!1sen!2sus!4v1487507041493" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      image:
+        src: itinerary/mairie-saint-cyr.jpg
+        alt: Mairie Saint-Cyr-Sur-Loire
+    - title: Cérémonie Laïque
+      date: Samedi 9 Septembre 2017
+      time: "17:00"
+      location: Domaine de la Fougeraie
+      content: Domaine de la Fougeraie <br>
+        Route departementale 54<br>
+        37370 Saint-Paterne-Racan <br>France <br><br>
+        Départ pour le domaine entre trente minutes et une heure après la cérémonie
+        à la mairie.
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d172558.2545240446!2d0.35960149312063056!3d47.485574296865906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47e2d55448bd1ddb%3A0x488c6749b8457e16!2sMairie+de+Saint-Cyr-sur-Loire%2C+H%C3%B4tel+de+Ville%2C+Parc+de+la+Perraudi%C3%A8re%2C+37540+Saint-Cyr-sur-Loire%2C+France!3m2!1d47.399200799999996!2d0.6673201!4m5!1s0x47e2cf3656efd583%3A0xeaa123d2c3292b96!2sDomaine+de+la+Fougeraie%2C+Saint-Paterne-Racan%2C+France!3m2!1d47.577881999999995!2d0.41881399999999996!5e0!3m2!1sen!2sus!4v1487507230680" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      diaporama:
+        - src: itinerary/chateau-fougeraie.jpg
+          alt: Château du domaine de la Fougeraie
+        - src: itinerary/chateau-fougeraie-aerien.jpg
+          alt: Vue aérienne domaine de la Fougeraie
+        - src: itinerary/chevreuil.jpg
+          alt: Chevreuil dans les bois du domaine
+        - src: itinerary/chateau-fougeraie-nuit.jpg
+          alt: Vue de nuit du château du Domaine de la Fougeraie
+    - title: Vin d'Honneur
+      date: Samedi 9 Septembre 2017
+      time: "18:00"
+      location: Domaine de la Fougeraie
+      diaporama:
+        - src: itinerary/cocktail-1.jpg
+          alt: Vin d'Honneur
+        - src: itinerary/cocktail-2.jpg
+          alt: Vin d'Honneur 2
+        - src: itinerary/cocktail-3.jpg
+          alt: Vin d'Honneur 3
+        - src: itinerary/cocktail-4.jpg
+          alt: Vin d'Honneur 4
+      content: Le vin d'honneur sera servi immédiatement après la cérémonie
+        laïque.
+    - title: Repas
+      date: Samedi 9 Septembre 2017
+      time: "~ 20:00"
+      location: Domaine de la Fougeraie
+      content: Le repas sera servi vers 20:00 et suivi par une soirée dansante.<br><br>
+        Un nombre limité de chambres est disponible sur le domaine. Nous les donnerons
+        en priorité aux invités venant de l'étranger, aux personnes agées, puis
+        aux non tourangeaux. Il y a également possibilité de planter des tentes
+        dans le parc du domaine. Merci de nous communiquer vos besoins de couchage
+        dans <a href="/fr/rsvp">la page RSVP</a> et nous essayerons de faire au mieux.
+    - title: Lendemain du Mariage
+      date: Dimanche 10 Septembre 2017
+      time: "10:00"
+      location: Domaine de la Fougeraie
+      content: Le lendemain, un brunch barbecue sera servi dans le parc du
+        domaine.
+    - title: Tour of Tours <em>(TBD)</em>
+      date: Mon 11 Sept 2017
+      time: TBD
+      location: Tours
+      content: Pour ceux qui sont interessés, Jérémy donnera une visite rapide
+        de la plus belle ville de France. La visite est principalement destinée
+        aux américains, mais les parisiens sont les bienvenus.
+      image:
+        src: itinerary/tours-mairie.jpg
+        alt: Mairie de Tours

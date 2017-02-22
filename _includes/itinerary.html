@@ -1,0 +1,65 @@
+{% if layout.lang=='fr' %}
+  {% assign items=site.data.itinerary.items.fr %}
+{% else %}
+  {% assign items=site.data.itinerary.items.en %}
+{% endif %}
+<div class="pt-page pt-page-home display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-image bg-itinerary"></div>
+    <div class="page-scroll">
+      <div class="bg-main-image-overlay-2">
+        <div class="main-section-s2">
+          <div class="col-md-12">
+            {% include page_title.html %}
+            <div class="clearfix"></div>
+            <div class="container-fluid">
+              <ul class="timeline">
+                {% for item in items %}
+                  {% assign loopParity = forloop.index | modulo: 2 %}
+                  {% capture fadeInSide %}{% if loopParity == 0 %}fadeInRight{% else %}fadeInLeft{% endif %}{% endcapture %}
+                  <li {% if loopParity == 0 %}class="timeline-inverted"{% endif %}>
+                    <div class="timeline-badge">
+                      <a><i class="glyphicon glyphicon-star"></i></a>
+                    </div>
+                    <div
+                        class="timeline-panel"
+                        data-class="{{ fadeInSide }}" >
+                      <div class="timeline-heading">
+                        <h3 class="timeline-title">{{ item.title }}</h3>
+                        <span class="label label-default">{{ item.date }} - {{ item.time }}</span>
+                      </div>
+                      <div class="timeline-body">
+                        {% if item.image %}
+                        <div class="timeline-img">
+                          <img
+                            src="{{ site.github.url }}/assets/img/{{ item.image.src }}"
+                            alt="{{ item.image.alt }}"
+                          />
+                        </div>
+                        {% endif %}
+                        {% if item.diaporama %}
+                        <div class="itinerary-slider">
+                          {% for diapo in item.diaporama %}
+                          <div>
+                            <img class="img-responsive"
+                              src="{{ site.github.url }}/assets/img/{{ diapo.src }}"
+                              alt="{{ diapo.alt }}" />
+                          </div>
+                          {% endfor %}
+                        </div>
+                        {% endif %}
+                        <h4>{{ item.location }}</h4>
+                        <p>{{ item.content }}</p>
+                      </div>
+                    </div>
+                  </li>
+                {% endfor %}
+                <li class="clearfix no-float"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,9 +1,9 @@
 - name: Accueil
   link: /fr
   fa_icon: home
-# - name: Programme
-#   link: /fr/programme
-#   fa_icon: calendar
+- name: Programme
+  link: /fr/programme
+  fa_icon: calendar
 - name: Gallerie
   link: /fr/gallerie
   fa_icon: camera
