@@ -119,7 +119,7 @@ items:
       time: "~ 20:00"
       location: Domaine de la Fougeraie
       content: Le repas sera servi vers 20:00 et suivi par une soirée dansante.<br><br>
-        Un nombre limité de chambres est disponible sur le domaine. Nous les donnerons
+        Un nombre limité de chambres est disponible sur le domaine. Elles seront réservées
         en priorité aux invités venant de l'étranger, aux personnes agées, puis
         aux non tourangeaux. Il y a également possibilité de planter des tentes
         dans le parc du domaine. Merci de nous communiquer vos besoins de couchage
@@ -130,9 +130,9 @@ items:
       location: Domaine de la Fougeraie
       content: Le lendemain, un brunch barbecue sera servi dans le parc du
         domaine.
-    - title: Tour of Tours <em>(TBD)</em>
+    - title: Visite de Tours <em>(à définir)</em>
       date: Mon 11 Sept 2017
-      time: TBD
+      time: à définir
       location: Tours
       content: Pour ceux qui sont interessés, Jérémy donnera une visite rapide
         de la plus belle ville de France. La visite est principalement destinée
