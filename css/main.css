@@ -731,7 +731,7 @@ _:-ms-fullscreen, :root .navbar-nav > li {
   background-size: cover; }
 
 .bg-home {
-  background: url(http://placehold.it/1920x1080) no-repeat center center;
+  background: url("/assets/img/home-couple-picture.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3260,12 +3260,12 @@ td, th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("fonts/glyphicons-halflings-regular.eot");
+  src: url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/glyphicons-halflings-regular.woff") format("woff"), url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 3px;
@@ -11726,8 +11726,8 @@ span.help-block {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -15837,3 +15837,167 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1); }
+
+/****************************************/
+/*                MENU                  */
+/****************************************/
+.jnp-mobile-menu .hamburger {
+  margin-right: 20px; }
+.jnp-mobile-menu .jnp-logo {
+  margin-left: 20px; }
+
+.navbar-nav > li > a {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important; }
+  .navbar-nav > li > a svg {
+    fill: #e32b42; }
+  .navbar-nav > li > a i.fa {
+    color: #e9586a; }
+
+.ver-menu, .ver-menu-s2 {
+  float: right;
+  width: 69%; }
+  @media (max-width: 1024px) {
+    .ver-menu, .ver-menu-s2 {
+      padding-top: 26px;
+      padding-right: 10px; } }
+
+.jnp-logo {
+  font-weight: 800;
+  color: inherit;
+  font-family: 'Great Vibes', cursive;
+  width: 210px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px 0; }
+  @media (max-width: 1024px) {
+    .jnp-logo {
+      padding: 0; } }
+  .jnp-logo h2 {
+    font-size: 2.2em;
+    padding: 0;
+    margin: 0; }
+  .jnp-logo a:hover {
+    text-decoration: none; }
+  .jnp-logo span.jnp-logo-pooja {
+    color: #e32b42; }
+  .jnp-logo span.jnp-logo-and {
+    color: #e32b42; }
+  .jnp-logo span.jnp-logo-jeremy {
+    color: #00afc5; }
+
+/****************************************/
+/*          MAIN CONTENT                */
+/****************************************/
+.container p, .container ul {
+  color: #000;
+  font-weight: 300; }
+
+.clock-item p {
+  color: #fff; }
+
+.pt-page {
+  visibility: inherit; }
+  .pt-page h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #e32b42; }
+    @media (max-width: 1024px) {
+      .pt-page h3 {
+        font-size: 1.3em; } }
+    .pt-page h3 em {
+      font-style: italic;
+      font-size: 80%; }
+
+.jnp-section {
+  padding: 20px;
+  margin: 10px; }
+  .jnp-section h3 {
+    text-align: center;
+    margin: 5px 0 5px 0;
+    text-transform: uppercase;
+    font-size: 1.3em; }
+    .jnp-section h3 .fa {
+      display: inline-block;
+      width: 100%;
+      color: #00afc5;
+      margin-bottom: 10px; }
+  .jnp-section p {
+    text-align: left; }
+    .jnp-section p strong {
+      font-weight: 500; }
+  .jnp-section ul {
+    margin-left: 20px;
+    font-size: .9em;
+    font-family: 'Roboto', sans-serif; }
+  .jnp-section h2 {
+    text-align: center;
+    margin: 5px 0;
+    color: #00afc5;
+    font-family: roboto;
+    font-size: 1.1em; }
+  .jnp-section p, .jnp-section ul {
+    font-size: .9em; }
+  .jnp-section iframe {
+    width: 100%;
+    text-align: center; }
+
+.page-title .jnp-icon-infinity {
+  font-size: 36px;
+  bottom: -19px; }
+.page-title h2 {
+  padding-top: 15px; }
+
+.bg-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.bg-home {
+  background: url("/assets/img/home-couple-picture.jpg") no-repeat center center; }
+
+.bg-itinerary, .bg-travel, .bg-rsvp, .bg-about-locale {
+  background: url("/assets/img/itinerary-couple-picture.jpg") no-repeat center center; }
+
+/****************************************/
+/*             ITINERARY                */
+/****************************************/
+.timeline .timeline-heading {
+  margin-bottom: 15px; }
+.timeline .timeline-img {
+  margin-bottom: 15px; }
+.timeline h4 {
+  margin-top: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: #00afc5;
+  font-size: 1.2em;
+  font-weight: 400; }
+  @media (max-width: 1024px) {
+    .timeline h4 {
+      font-size: 1.1em; } }
+.timeline iframe {
+  width: 100%; }
+
+/****************************************/
+/*             TRAVEL                   */
+/****************************************/
+/****************************************/
+/*             ABOUT LOCALE             */
+/****************************************/
+.pt-page-about-locale .about-locale-slider {
+  display: none;
+  margin: 15px 0; }
+  .pt-page-about-locale .about-locale-slider span {
+    font-size: .8em;
+    color: #000; }
+
+/****************************************/
+/*             RSVP                   */
+/****************************************/
+.rsvp-form p {
+  font-size: .9em;
+  text-align: left; }
+  .rsvp-form p.jnp-rsvp-intro {
+    text-align: center; }

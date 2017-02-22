@@ -16,52 +16,7 @@ $(document).on('ready', function () {
         }, 500);
     });
 
-    $('.other-menu').on('mouseenter', function () {
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0, 84px, 0px)', '-webkit-transform': 'translate3d(0, 84px, 0px)', '-ms-transform': 'translate3d(0, 84px, 0px)', '-o-transform': 'translate3d(0, 84px, 0px)', 'transform': 'translate3d(0, 84px, 0px)' }, 'fast');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0, 0px, 0px)').css('-webkit-transform', 'translate3d(0, 84px, 0px)').css('-ms-transform', 'translate3d(0, 84px, 0px)').css('-o-transform', 'translate3d(0, 84px, 0px)').css('transform', 'translate3d(0, 84px, 0px)');
-        }, 200);
-    });
-
-    $('.other-menu').on('mouseenter', function () {
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0px, 0px, 0px)', '-webkit-transform': 'translate3d(0px, 0px, 0px)', '-ms-transform': 'translate3d(0px, 0px, 0px)', '-o-transform': 'translate3d(0px, 0px, 0px)', 'transform': 'translate3d(0px, 0px, 0px)', }, 'fast');
-        $('.other-menu').addClass('hover_active');
-        $('.other-menu a').addClass('hover_active selected');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0px, 0px, 0px)').css('-webkit-transform', 'translate3d(0px, 0px, 0px)').css('-ms-transform', 'translate3d(0px, 0px, 0px)').css('-o-transform', 'translate3d(0px, 0px, 0px)').css('transform', 'translate3d(0px, 0px, 0px)');
-        }, 200);
-
-
-    }).on('mouseleave', function () {
-
-        $('.hover-menu').animate({ '-moz-transform': 'translate3d(0px, -400px, 0px)', '-webkit-transform': 'translate3d(0px, -400px, 0px)', '-ms-transform': 'translate3d(0px, -400px, 0px)', '-o-transform': 'translate3d(0px, -400px, 0px)', 'transform': 'translate3d(0px, -400px, 0px)' }, 'fast');
-        $('.other-menu').removeClass('hover_active');
-        $('.other-menu a').removeClass('hover_active selected');
-        setTimeout(function () {
-            $('.hover-menu').css('-moz-transform', 'translate3d(0px, -400px, 0px)').css('-webkit-transform', 'translate3d(0px, -400px, 0px)').css('-ms-transform', 'translate3d(0px, -400px, 0px)').css('-o-transform', 'translate3d(0px, -400px, 0px)').css('transform', 'translate3d(0px, -400px, 0px)');
-        }, 200);
-    });
-
     // JavaScript Document
-    var today = new Date();
-
-    var target = new Date(today);
-    target.setDate(120); // Set no. of days from today
-    target.setHours(0, 12, 0, 0);
-
-    // Countdown start from yesterday
-    var yesterday = new Date(today);
-    yesterday.setDate(today.getDate() - 1); // Day counter will start from yesteday
-    yesterday.setHours(0, 0, 0, 0);
-    if ($.find('.countdown').length) {
-        $('.countdown').final_countdown({
-            'start': yesterday.getTime() / 1000,
-            'end': target.getTime() / 1000,
-            'now': today.getTime() / 1000
-        }, function () {
-            // Finish Callback
-        });
-    }
     $(window).load(function () {
         if ($.find('.gridlayout').length) {
             $('.gridlayout').isotope({
@@ -74,18 +29,6 @@ $(document).on('ready', function () {
         }
     });
 
-
-    /*Timer for wedding page*/
-    if ($.find('#example').length) {
-        $('#example').countdown({
-            date: '04/29/2017 23:59:59',
-            offset: 0,
-            day: 'Day',
-            days: 'Days'
-        }, function () {
-
-        });
-    }
     $('.hamburger').on('click', function () {
         if ($('.navbar-fixed-top').css('right') == '-100px') {
             $('.navbar-fixed-top').animate({ right: '0px' }, 'slow');
@@ -172,63 +115,15 @@ $(document).on('ready', function () {
     /*-----photo gallery------------*/
 
     if ($.find('.fancybox').length) {
-        $('.fancybox').fancybox();
+        $('.fancybox').fancybox({
+          type: 'image',
+        });
     }
-    //gallery option 2 
 
-    if ($.find('.fancybox2').length) {
-        $('.fancybox2').fancybox();
-    }
     /*-----------------------------------people page slider------------------------*/
 
-    $('.the-people-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        autoplay: true,
-        responsive: [
-  {
-      breakpoint: 981,
-      settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-      }
-  },
 
-   {
-       breakpoint: 769,
-       settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false
-       }
-   },
-    {
-        breakpoint: 640,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false
-        }
-    },
-   {
-       breakpoint: 361,
-       settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-           arrows: false
-       }
-   }
-   // You can unslick at a given breakpoint now by adding:
-   // settings: 'unslick'
-   // instead of a settings object
-        ]
-    });
-
-    $('.ceremony-slider').slick({
+    $('.itinerary-slider').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -269,41 +164,71 @@ $(document).on('ready', function () {
         ]
     });
 
+    $('.about-locale-slider').show(function () {
+      $(this).slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          autoplay: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+          responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: 'unslick'
+            // instead of a settings object
+          ]
+      });
+    });
 
-
-    window.wow = new WOW({
+    var wow = new WOW({
         animateClass: 'animated',
         offset: 0,
         callback: function (box) {
         }
     });
-
     wow.init();
 
+    $('.pt-page').fadeIn(
+      function () {
+        var today = new Date();
+
+        var target = new Date(Date.parse('2017-09-09T14:00:00+01:00'));
+        var start = new Date(Date.parse('2016-09-09T14:00:00+01:00'));
+        $('.countdown').final_countdown({
+            'start': start.getTime() / 1000,
+            'end': target.getTime() / 1000,
+            'now': today.getTime() / 1000
+        }, function () {
+            // Finish Callback
+        });
+      }
+    );
 
 });
-
-
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-36251023-1']);
-_gaq.push(['_setDomainName', 'jqueryscript.net']);
-_gaq.push(['_trackPageview']);
-
-(function () {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-
-
-
-document.onreadystatechange = function () {
-    var state = document.readyState
-    if (state == 'interactive') {
-    } else if (state == 'complete') {
-        setTimeout(function () {
-            $('#load').animate({ 'opacity': '0' }, 'fast');
-
-        }, 1000);
-    }
-}
