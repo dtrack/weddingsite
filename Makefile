@@ -2,7 +2,7 @@
 # script builds the jekyll site on the develop branch, checkout master and
 # puts the static file into master, goes back to develop at the end
 
-TO_DELETE = _config.yml _includes _layouts Gemfile.lock Makefile _data _plugins Gemfile css/*.scss _sass js/
+TO_DELETE = _config.yml _includes _layouts Gemfile.lock Makefile _data _plugins Gemfile css/*.scss _sass js/ raw_assets
 DATE = $(shell date +%I:%M\ %p)
 CHECK = \033[32m✔\033[39m
 HR=\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
