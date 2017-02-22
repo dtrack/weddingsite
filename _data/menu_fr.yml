@@ -4,9 +4,9 @@
 # - name: Programme
 #   link: /fr/programme
 #   fa_icon: calendar
-# - name: Gallerie
-#   link: /fr/gallerie
-#   fa_icon: camera
+- name: Gallerie
+  link: /fr/gallerie
+  fa_icon: camera
 # - name: Visiter Tours
 #   link: /fr/visiter-tours
 #   fa_icon: globe

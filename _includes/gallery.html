@@ -1,0 +1,26 @@
+<div class="pt-page pt-page-travel display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-image bg-travel"></div>
+    <div class="page-scroll">
+      <div class="bg-main-image-overlay-2">
+        <div class="main-section-s2">
+          <div class="container">
+            {% include page_title.html %}
+            <div class="gridlayout-main">
+              <div class="gridlayout">
+                {% for item in site.data.gallery %}
+                <div class="grid-item">
+                  <a class="fancybox" href="{{ site.github.url }}{{ item.large }}" data-fancybox-group="gallery">
+                    <img class="img-responsive" alt="{{ item.alt }}" src="{{ site.github.url }}{{ item.small }}">
+                    <div class="gallery-image-hover"><i class="glyphicon glyphicon-search"></i></div>
+                  </a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
