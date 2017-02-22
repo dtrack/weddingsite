@@ -8,18 +8,19 @@
   var $emailField = $form.find("input[name=email]");
   var $nameField = $form.find("input[name=name]");
   var $phoneNumberField = $form.find("input[name=phoneNumber]");
-  var $isAttendingField = $form.find("input[name=isAttending]");
-  var $countAdultsField = $form.find("input[name=countAdults]");
-  var $countChildrenField = $form.find("input[name=countChildren]");
-  var $countBedsField = $form.find("input[name=countBeds]");
-  var $countVeggieMenuField = $form.find("input[name=countVeggieMenu]");
-  var $songChoiceField = $form.find("input[name=songChoice]");
+  var $isAttendingField = $form.find("select[name=isAttending]");
+  var $countAdultsField = $form.find("select[name=countAdults]");
+  var $countChildrenField = $form.find("select[name=countChildren]");
+  var $countBedsField = $form.find("select[name=countBeds]");
+  var $countVeggieMenuField = $form.find("select[name=countVeggieMenu]");
+  var $songChoiceField = $form.find("textarea[name=songChoice]");
 
   $form.submit(function( event ) {
     event.preventDefault();
 
     if (!isFormValid()) {
       showError();
+      return;
     }
     $("#loading").css("display","inline-block");
 
@@ -44,6 +45,7 @@
         $( "#Success").slideUp( "slow" );
         }, 3000);
       $form[0].reset();
+      $form.hide();
     }).error(function (error) {
       $( "#loading").hide();
       $( "#Error").slideDown( "slow" );
@@ -54,7 +56,7 @@
   });
 
   function isFormValid() {
-    if (!$form[0].checkValidity()) {
+    if (!$form[0].checkValidity() || !$form.valid()) {
       return false;
     }
     return true;

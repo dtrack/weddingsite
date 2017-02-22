@@ -16,3 +16,6 @@
 - name: RSVP & Contact
   link: /rsvp
   fa_icon: pencil
+- name: Français
+  link: /fr
+  fa_icon: language
