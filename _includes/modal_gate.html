@@ -1,0 +1,35 @@
+{% if layout.lang=='fr' %}
+  {% assign modalData=site.data.modal_gate.fr %}
+{% else %}
+  {% assign modalData=site.data.modal_gate.en %}
+{% endif %}
+
+<!-- Modal -->
+<div class="modal fade" id="entryGateModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="entryGateModalLabel">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          {{ modalData.title }}
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger display_none" id="challengeFailed" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          {{ modalData.challengeFailed }}
+        </div>
+        <p>{{ modalData.content }}</p>
+        <p class='jnp-mdp'>
+          <input type="password" name="password">
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" id="entry-gate-leave">{{ modalData.buttonLeave }}</button>
+        <button type="button" class="btn btn-primary" id="entry-gate-challenge">{{ modalData.buttonEnter }}</button>
+      </div>
+    </div>
+  </div>
+</div>

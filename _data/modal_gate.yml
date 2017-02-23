@@ -1,0 +1,14 @@
+fr:
+  title: Accès Protégé
+  content: Saisissez le mot de passe pour entrer.
+  buttonEnter: Entrer
+  buttonLeave: Quitter
+  challengeFailed: Mot de passe incorrect. Vérifier votre série en respectant
+    majuscules et minuscules.
+en:
+  title: Protected Access
+  content: Please enter your password to enter.
+  buttonEnter: Enter
+  buttonLeave: Leave
+  challengeFailed: Password is invalid, please try again. Passwords are case
+    sensitive.

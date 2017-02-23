@@ -4,6 +4,28 @@ $colorBlue: #00afc5;
 $colorMenu: $colorRed;
 
 /****************************************/
+/*            ENTRY MODAL               */
+/****************************************/
+#entryGateModal {
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    color: $colorBlue;
+  }
+  p {
+    color: black;
+    font-weight: 600;
+
+    &.jnp-mdp {
+      text-align: center;
+    }
+  }
+}
+
+.modal-backdrop.in {
+  background-color: black;
+  opacity: .9;
+}
+/****************************************/
 /*                MENU                  */
 /****************************************/
 .jnp-mobile-menu {
