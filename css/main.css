@@ -15839,6 +15839,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   transform: scaleX(1); }
 
 /****************************************/
+/*            ENTRY MODAL               */
+/****************************************/
+#entryGateModal h4 {
+  font-family: 'Roboto', sans-serif;
+  color: #00afc5; }
+#entryGateModal p {
+  color: black;
+  font-weight: 600; }
+  #entryGateModal p.jnp-mdp {
+    text-align: center; }
+
+.modal-backdrop.in {
+  background-color: black;
+  opacity: .9; }
+
+/****************************************/
 /*                MENU                  */
 /****************************************/
 .jnp-mobile-menu .hamburger {
