@@ -10,9 +10,9 @@
 # - name: Visiter Tours
 #   link: /fr/visiter-tours
 #   fa_icon: globe
-# - name: RSVP & Contact
-#   link: /fr/rsvp
-#   fa_icon: pencil
+- name: RSVP & Contact
+  link: /fr/rsvp
+  fa_icon: pencil
 - name: English
   link: /
   fa_icon: language

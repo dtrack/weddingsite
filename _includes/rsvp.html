@@ -1,0 +1,122 @@
+{% if layout.lang=='fr' %}
+  {% assign rsvpData=site.data.rsvp.fr %}
+{% else %}
+  {% assign rsvpData=site.data.rsvp.en %}
+{% endif %}
+
+<div class="pt-page pt-page-rsvp display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-rsvp"></div>
+    <div class="bg-main-image-overlay-2">
+      <div class="main-section-s2">
+        <div class="col-md-12">
+          {% include page_title.html %}
+          <div class="container">
+            <div class="rsvp">
+              <div class="rsvp-form white-box wow fadeInUp col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" data-class="fadeInUp">
+                <p class="jnp-rsvp-intro">
+                  {{ rsvpData.response_by_text }}<br>
+                  <span>{{ rsvpData.response_by_date }}</span>
+                </p>
+                {% for item in rsvpData.paragraphs_intro %}
+                  <p>{{ item.text }}</p>
+                {% endfor %}
+                <div id="Success" class="successalert" style=" display:none;">
+                  <strong>{{ rsvpData.form.sendSuccess }}</strong>.
+                </div>
+                <div id="Error" class="errorelert" style="display:none;">
+                  <strong>{{ rsvpData.form.sendError }}</strong>
+                </div>
+                <form class="form floating-label text-left form-validate" name="rsvp-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" required data-rule-minlength="2" />
+                    <label for="name">{{ rsvpData.form.name.label }}</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" class="form-control" name="phoneNumber" />
+                    <label for="phoneNumber">{{ rsvpData.form.phoneNumber.label }}</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" data-rule-email="true" required />
+                    <label for="email">{{ rsvpData.form.email.label }}</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="isAttending" class="form-control select2-list dirty" required>
+                          {% for item in rsvpData.form.attending.options %}
+                          <option value="{{ item.value }}">{{ item.label }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="isAttending">{{ rsvpData.form.attending.label }}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="countAdults" class="form-control select2-list dirty" required>
+                          {% for item in rsvpData.form.countAdults.options %}
+                          <option value="{{ item.value }}">{{ item.label }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="countAdults">{{ rsvpData.form.countAdults.label }}</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <select name="countChildren" class="form-control select2-list dirty" required>
+                          {% for item in rsvpData.form.countChildren.options %}
+                          <option value="{{ item.value }}">{{ item.label }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="countChildren">{{ rsvpData.form.countChildren.label }}</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select
+                            data-toggle="tooltip" title="{{ rsvpData.form.countBeds.tooltip }}"
+                            name="countBeds" class="form-control select2-list dirty">
+                          {% for item in rsvpData.form.countBeds.options %}
+                            <option value="{{ item.value }}">{{ item.label }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="countBeds">
+                          {{ rsvpData.form.countBeds.label }}
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select
+                            data-toggle="tooltip" title="{{ rsvpData.form.countVeggieMenu.tooltip }}"
+                            name="countVeggieMenu" class="form-control select2-list dirty">
+                          {% for item in rsvpData.form.countVeggieMenu.options %}
+                            <option value="{{ item.value }}">{{ item.label }}</option>
+                          {% endfor %}
+                        </select>
+                        <label for="countVeggieMenu">{{rsvpData.form.countVeggieMenu.label}}</label>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="songChoice"></textarea>
+                    <label>{{ rsvpData.form.songChoice.label }}</label>
+                  </div>
+                  <div class="rsvp-button text-center">
+                    <button type="submit" class="hvr-sweep-to-right">{{ rsvpData.form.sendButton }}</button>
+                    <div id="loading" style="display:none; padding-left:20px;">
+                      <img src="{{ site.github.url }}/assets/img/layout/ajax-loader.gif" alt="Loader">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

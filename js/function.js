@@ -16,6 +16,8 @@ $(document).on('ready', function () {
         }, 500);
     });
 
+    $('[data-toggle="tooltip"]').tooltip();
+
     // JavaScript Document
     $(window).load(function () {
         if ($.find('.gridlayout').length) {

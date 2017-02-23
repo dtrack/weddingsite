@@ -1,0 +1,168 @@
+fr:
+  response_by_text: Merci de répondre le plus tôt possible, au plus tard le
+  response_by_date: 1er Juin 2017
+  paragraphs_intro:
+    - text: >
+        Nous avons décidé de ne pas faire de liste de mariage pour ne
+        pas compliquer le voyage. Votre présence est amplement suffisante à
+        notre bonheur. Si vous souhaitez tout de même faire un geste,
+        une corbeille nuptiale sera mise à disposition.
+    - text: >
+        Pour toutes questions, n'hésitez pas à nous envoyer un email:<br>
+        <strong>jeremy [arobase] jhenault [point] net</strong>
+        ou <br><strong>me [arobase] thepoojashah [point] com </strong>.
+  form:
+    sendButton: ENVOYER
+    sendSuccess: Merci !
+    sendError: Une erreur s'est produite! Vérifiez votre saisie ou réessayez ultérieurement.
+    name:
+      label: Prénom et Nom
+    phoneNumber:
+      label: Numéro de Téléphone
+    email:
+      label: Addresse Email
+    attending:
+      label: Sera Présent ?
+      options:
+        - value: ""
+          label: --------
+        - value: "true"
+          label: Bien Sûr !
+        - value: "false"
+          label: Non &#9785;
+    countAdults:
+      label: Adultes
+      options:
+        - value: 0
+          label: Nbre d'Adulte(s)
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+    countChildren:
+      label: Enfants
+      options:
+        - value: ''
+          label: Nbre d'Enfant(s)
+        - value: 0
+          label: 0
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+        - value: 3
+          label: 3
+        - value: 4
+          label: 4
+    countBeds:
+      label: Besoin de lits le soir du mariage ?
+      tooltip: >
+        Nous tenterons d'accomoder vos besoins au mieux. Le nombre de chambres
+        est limité, et sera reservé en priorité pour les personnes venant
+        de loin et les personne agées.
+      options:
+        - value: ''
+          label: "Nbre Lit(s)"
+        - value: 0
+          label: 0
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+        - value: 3
+          label: 3
+    countVeggieMenu:
+      tooltip: "Menus végétariens disponibles uniquement pour les adultes."
+      label: "Nombre de végétariens?"
+      options:
+        - value: 0
+          label: 0
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+    songChoice:
+      label: 🎶🎶 Avez-vous une suggestion de chanson pour la soirée dansante ? 🎉🎉
+en:
+  response_by_text: Please kindly reply as early as you can, no later than
+  response_by_date: 01 June 2017
+  paragraphs_intro:
+    - text: >
+        Due to the travel, we will not be having a registry and we will
+        not be accepting any gifts. Your attendance to our wedding is
+        more than enough. However, if you feel you must give us something
+        please feel free to provide a simple card or envelope with
+        cash or check. Thank you.
+    - text: >
+        For any questions, please contact us at
+        <strong>jeremy[at]jhenault[dot]net</strong>
+        or <strong>me[at]thepoojashah[dot]com </strong>
+  form:
+    sendButton: SUBMIT
+    sendSuccess: Thank you !
+    sendError: Error occurred while submitting RSVP. Double check your entry or try again later.
+    name:
+      label: Name
+    phoneNumber:
+      label: Contact Number
+    email:
+      label: Email Address
+    attending:
+      label: Attending?
+      options:
+        - value: ""
+          label: Select Option
+        - value: "true"
+          label: Yes !
+        - value: "false"
+          label: No &#9785;
+    countAdults:
+      label: Adults
+      options:
+        - value: ""
+          label: "# Adult(s)"
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+    countChildren:
+      label: Children
+      options:
+        - value: ""
+          label: "# Child(ren)"
+        - value: 0
+          label: 0
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+        - value: 3
+          label: 3
+        - value: 4
+          label: 4
+    countBeds:
+      label: Beds needed on wedding night?
+      tooltip: ""
+      options:
+        - value: 0
+          label: "# Bed(s)"
+        - value: 0
+          label: 0
+        - value: 1
+          label: 1
+        - value: 2
+          label: 2
+        - value: 3
+          label: 3
+    countVeggieMenu:
+      label: "Need vegetarian menus (adults only) ?"
+      tooltip: ""
+      options:
+        - value: 0
+          label: "0 - I want French food!"
+        - value: 1
+          label: 1 please
+        - value: 2
+          label: 2 please
+    songChoice:
+      label: 🎶🎶 Any song you would like played during the party? 🎉🎉
