@@ -19,9 +19,7 @@ deploy:
 	@JEKYLL_ENV=production jekyll build
 	@echo "Generating files...                ${CHECK} Done"
 	@gulp compress
-	@pushd _site/js
-	@find . -type f -not -name '*modernizr.*' -print0 | xargs -0 rm --
-	@popd
+	@find _site/js/ -type f -not -name '*modernizr.*.js' -print0 | xargs -0 rm --
 	@echo "Generating statics...              ${CHECK} Done"
 	@git checkout master
 	@echo "Switch to master...                ${CHECK} Done"
