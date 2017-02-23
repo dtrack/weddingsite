@@ -15,10 +15,12 @@
 
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
-  {% if page.stylesheet %}
-    <link rel="stylesheet" href="{{ site.github.url }}/{{ page.stylesheet }}">
+  {% if jekyll.environment == "development" %}
+    <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
+  {% else %}
+    <link rel="stylesheet" href="{{ site.github.url }}/dist/css/all.css">
   {% endif %}
+
   <script src="{{ site.github.url }}/js/modernizr.custom.js"></script>
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

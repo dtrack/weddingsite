@@ -1,9 +1,10 @@
 var concat = require('gulp-concat');
 var gulp = require('gulp');
+var minify = require('gulp-minify-css');
 var pump = require('pump');
 var uglify = require('gulp-uglify');
 
-gulp.task('compress', function (cb) {
+gulp.task('compressjs', function (cb) {
   pump([
         gulp.src([
           './_site/js/jquery-2.1.4.js',
@@ -24,6 +25,20 @@ gulp.task('compress', function (cb) {
         concat('all.js'),
         uglify(),
         gulp.dest('./_site/dist/js')
+    ],
+    cb
+  );
+});
+
+
+gulp.task('minifycss', function (cb) {
+  pump([
+        gulp.src([
+          './_site/css/main.css'
+        ]),
+        concat('all.css'),
+        minify(),
+        gulp.dest('./_site/dist/css')
     ],
     cb
   );

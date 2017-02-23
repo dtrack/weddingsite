@@ -2,7 +2,7 @@
 # script builds the jekyll site on the develop branch, checkout master and
 # puts the static file into master, goes back to develop at the end
 
-TO_DELETE_BEFORE = js/
+TO_DELETE_BEFORE = js/ css/
 TO_DELETE = _config.yml _includes _layouts Gemfile.lock Makefile _data _plugins Gemfile css/*.scss _sass yarn.lock raw_assets package.json manifest.json gulpfile.js
 DATE = $(shell date +%I:%M\ %p)
 CHECK = \033[32m✔\033[39m
@@ -19,7 +19,10 @@ deploy:
 	@JEKYLL_ENV=production jekyll build
 	@echo "Generating files...                ${CHECK} Done"
 	@yarn install
-	@gulp compress
+	@gulp compressjs
+	@gulp minifycss
+	@rm _site/css/main.css
+	@mv _site/css/* _site/dist/css
 	@find _site/js/ -type f -not -name '*modernizr.*.js' -print0 | xargs -0 rm --
 	@echo "Generating statics...              ${CHECK} Done"
 	@git checkout master
