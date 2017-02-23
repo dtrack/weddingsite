@@ -15961,6 +15961,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .bg-itinerary, .bg-travel, .bg-rsvp, .bg-about-locale {
   background: url("/assets/img/itinerary-couple-picture.jpg") no-repeat center center; }
 
+.tooltip-inner {
+  text-align: left; }
+
 /****************************************/
 /*             ITINERARY                */
 /****************************************/
@@ -16001,3 +16004,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: left; }
   .rsvp-form p.jnp-rsvp-intro {
     text-align: center; }
+.rsvp-form .form-group label {
+  color: black; }
