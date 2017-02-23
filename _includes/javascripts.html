@@ -1,15 +1,19 @@
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery-2.1.4.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/function.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/bootstrap.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/slick.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/easyResponsiveTabs.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/timer.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.final-countdown.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.dlmenu.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.countdown.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.masonarygrid.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.fancybox.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/wow.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/modalEntryGate.js"></script>
-<script type="text/javascript" src="{{ site.github.url }}/js/rsvpFormValidation.js"></script>
+{% if jekyll.environment == "development" %}
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/function.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/bootstrap.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/slick.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/easyResponsiveTabs.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/timer.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.final-countdown.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.dlmenu.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.countdown.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.masonarygrid.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/wow.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/modalEntryGate.js"></script>
+  <script type="text/javascript" src="{{ site.github.url }}/js/rsvpFormValidation.js"></script>
+{% else %}
+  <script type="text/javascript" src="{{ site.github.url }}/dist/js/all.js"></script>
+{% endif %}

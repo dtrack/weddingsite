@@ -18,6 +18,11 @@ deploy:
 	@echo "${HR}\n"
 	@JEKYLL_ENV=production jekyll build
 	@echo "Generating files...                ${CHECK} Done"
+	@gulp compress
+	@pushd _site/js
+	@find . -type f -not -name '*modernizr.*' -print0 | xargs -0 rm --
+	@popd
+	@echo "Generating statics...              ${CHECK} Done"
 	@git checkout master
 	@echo "Switch to master...                ${CHECK} Done"
 	@rm -rf ${TO_DELETE} && cp -r _site/* .  && rm -rf _site && rm -rf ${TO_DELETE_AFTER}
