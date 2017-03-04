@@ -7,9 +7,9 @@
 - name: Gallerie
   link: /fr/gallerie
   fa_icon: camera
-# - name: Visiter Tours
-#   link: /fr/visiter-tours
-#   fa_icon: globe
+- name: Visiter Tours 
+  link: /fr/visiter-tours
+  fa_icon: globe
 - name: RSVP & Contact
   link: /fr/rsvp
   fa_icon: pencil

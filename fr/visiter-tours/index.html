@@ -1,0 +1,121 @@
+---
+layout: default
+
+active: Visiter Tours
+title: Visiter Tours
+
+slider:
+  - src: about-locale/tours-mairie.jpg
+    alt: Mairie de Tours
+  - src: about-locale/chenonceau.jpg
+    alt: Château de Chenonceau
+  - src: about-locale/chambord.jpg
+    alt: Château de Chambord
+  - src: about-locale/place-plumereau.jpg
+    alt: Place Plumerau
+  - src: about-locale/rigny-usse.jpg
+    alt: Château d'Ussé
+  - src: about-locale/azay.jpg
+    alt: Château d'Azay-le-Rideau
+  - src: about-locale/cave-monplaisir.jpg
+    alt: Cave Monplaisir
+---
+
+<div class="pt-page pt-page-about-locale display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-image bg-about-locale"></div>
+    <div class="page-scroll">
+      <div class="bg-main-image-overlay-2">
+        <div class="main-section-s2">
+          <div class="container">
+            {% include page_title.html %}
+            <div class="row">
+              <div class="col-md-12">
+                <div class="white-box jnp-section">
+                  <h2>Tours et la Vallée de la Loire</h2>
+                  <p>
+                    Cette section s'addresse principale à nos amis non
+                    tourangeaux, auxquels nous conseillons vivement de prendre
+                    un ou deux jours pour visiter la plus belle région de France
+                    qu'est la Touraine!<br>
+                    La ville de Tours combine des influences de plusieures
+                    époques remontant jusqu'à la période gallo-romaine, tandis
+                    que le quartier du vieux Tours propose de nombreux
+                    bars, restaurants et boutiques dans un cadre
+                    historique, ou vous pourrez admirer escaliers en colimaçon,
+                    maisons en colombages...
+                  </p>
+                  <div class="about-locale-slider">
+                  {% for slide in page.slider %}
+                    <div>
+                      <img class="img-responsive"
+                        src="{{ site.github.url }}/assets/img/{{ slide.src }}"
+                        alt="{{ slide.alt }}" />
+                      <span>{{ slide.alt }}</span>
+                    </div>
+                  {% endfor %}
+                  </div>
+                  <p>
+                    Nous recommandons également de visiter un des châteaux du
+                    Val de Loire, tous situés à moins d'une heure. Voici une
+                    petite sélection.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://www.chambord.org/" target="_blank">
+                        Chambord
+                      </a> (1 heure de route):
+                      Le château préféré de Jérémy, selon lui le plus beau de
+                      France au même niveau que Versailles.
+                    </li>
+                    <li>
+                      <a href="http://www.chenonceau.com/index.php/" target="_blank">
+                        Chenonceau
+                      </a> (40 minutes de route):
+                      Le château préféré de Pooja, il traverse le Cher et offre
+                      de magnifiques prises de vues.
+                    </li>
+                    <li>
+                      <a href="http://www.chateaudusse.fr/" target="_blank">
+                        Rigny-Ussé
+                      </a> (40 minutes de route):
+                      Château dans Charles Perauld s'inspira lorsqu'il écrivit
+                      "La Belle au Bois Dormant".
+                    </li>
+                  </ul>
+                  <p>
+                    Le Val de Loire est également parsemé d'innombrabres vignobles.
+                    De nombreux producteurs ont des caves sur les bords de Loire,
+                    vous pouvez simplement vous arréter, déguster et visiter les
+                    caves selon vous préférences. Voici quelques exemples.
+                  </p>
+                  <ul>
+                    <li>
+                      Chinon (40 minutes de route):
+                      ville médiévale, foyer de nombreuses caves et troglodytes.
+                      <a href="http://www.chinon-valdeloire.com/decouvrir/visiter/chinon-et-sa-forteresse/chinon-cite-medievale/chinon-accessible/409619-les-caves-painctes"
+                        target="_blank">
+                        "Les Caves Painctes"
+                      </a> and
+                      <a href="http://cavemonplaisir.fr/" target="_blank">
+                        "La Caves Monplaisir"
+                      </a>. Chinon est connue pour son vin rouge.
+                    </li>
+                    <li>
+                      <a href="http://www.cave-montlouis.com/" target="_blank">Montlouis</a> (20 minutes de route):
+                      Ville connue pour son vin blanc.
+                    </li>
+                    <li>
+                      <a href="http://www.cavedevouvray.com/" target="_blank">Vouvray</a> (20 minutes de route):
+                      Ville connue pour son pétillant.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
