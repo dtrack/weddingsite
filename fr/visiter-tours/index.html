@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+  <title>Visiter Tours</title>
+  <meta name="description" content="This is the website for the wedding of Jeremy and Pooja
+">
+
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="/dist/css/all.css">
+  
+
+  <script src="/js/modernizr.custom.js"></script>
+
+  <link rel="canonical" href="http://www.jeremyandpooja.com/fr/visiter-tours/">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#00afc5">
+
+</head>
+
+  <body>
+    
+
+<!-- Modal -->
+<div class="modal fade" id="entryGateModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="entryGateModalLabel">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          Protected Access
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger display_none" id="challengeFailed" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          Password is invalid, please try again. Passwords are case sensitive.
+        </div>
+        <p>Please enter your password to enter.</p>
+        <p class='jnp-mdp'>
+          <input type="password" name="password">
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" id="entry-gate-leave">Leave</button>
+        <button type="button" class="btn btn-primary" id="entry-gate-challenge">Enter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92080713-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <!-- responsive-tab only shown on mobile -->
+<div class="resonsive-tab">
+  <div class="header">
+    <div class="jnp-mobile-menu">
+      <div class="jnp-logo">
+        <a href="/" data-menu="index">
+          <h2>
+            <span class="jnp-logo-pooja">Pooja </span>
+            <span class="jnp-logo-and">&</span>
+            <span class="jnp-logo-jeremy">Jeremy</span></h2>
+        </a>
+      </div>
+      <div class="hamburger pull-right"> <img src="/assets/img/layout/menu-alt.png" alt="Navicon"> </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
+
+<div id="dl-menu" class="section1 navbar navbar-default navbar-fixed-top">
+  <div class="vertical-menu">
+    <!-- <div class="logo-s2"> <a href="index.html" data-menu="index"> <img src="images/logo.png" alt="logo"> </a> </div> -->
+    <div class="jnp-logo">
+      <a href="index.html" data-menu="index">
+        <h2>
+          <span class="jnp-logo-pooja">Pooja </span>
+          <span class="jnp-logo-and">&</span>
+          <span class="jnp-logo-jeremy">Jérémy</span></h2>
+      </a>
+    </div>
+    <div class="ver-menu">
+      
+      <ul class="dl-menu nav navbar-nav menubar-s2 horizontal_iconmenu" style="position: relative;">
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/" data-menu="Home">
+              
+              <i class="fa fa-home fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              Home
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/itinerary" data-menu="Itinerary">
+              
+              <i class="fa fa-calendar fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              Itinerary
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/gallery" data-menu="Gallery">
+              
+              <i class="fa fa-camera fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              Gallery
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/travel" data-menu="Travel">
+              
+              <i class="fa fa-suitcase fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              Travel
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/about-locale" data-menu="About Locale">
+              
+              <i class="fa fa-globe fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              About Locale
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/rsvp" data-menu="RSVP & Contact">
+              
+              <i class="fa fa-pencil fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              RSVP & Contact
+            </a>
+          </li>
+        
+          <li
+              class="hvr-overline-from-center ">
+            <a href="/fr" data-menu="Français">
+              
+              <i class="fa fa-language fa-2x"></i>
+              
+              <div class="clearfix"></div>
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="main-page-area">
+      <div id="pt-main" class="pt-perspective">
+        <div class="pt-page pt-page-about-locale display_none">
+  <div class="container-fluid bg-main-image">
+    <div class="blur-img bg-image bg-about-locale"></div>
+    <div class="page-scroll">
+      <div class="bg-main-image-overlay-2">
+        <div class="main-section-s2">
+          <div class="container">
+            <div class="page-title wow fadeInUp" data-class="fadeInUp">
+  <h2>
+    Visiter Tours
+    <span class="jnp-icon jnp-icon-infinity">&infin;</span>
+  </h2>
+</div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="white-box jnp-section">
+                  <h2>Tours et la Vallée de la Loire</h2>
+                  <p>
+                    Cette section s'addresse principale à nos amis non
+                    tourangeaux, auxquels nous conseillons vivement de prendre
+                    un ou deux jours pour visiter la plus belle région de France
+                    qu'est la Touraine!<br>
+                    La ville de Tours combine des influences de plusieures
+                    époques remontant jusqu'à la période gallo-romaine, tandis
+                    que le quartier du vieux Tours propose de nombreux
+                    bars, restaurants et boutiques dans un cadre
+                    historique, ou vous pourrez admirer escaliers en colimaçon,
+                    maisons en colombages...
+                  </p>
+                  <div class="about-locale-slider">
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/tours-mairie.jpg"
+                        alt="Mairie de Tours" />
+                      <span>Mairie de Tours</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/chenonceau.jpg"
+                        alt="Château de Chenonceau" />
+                      <span>Château de Chenonceau</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/chambord.jpg"
+                        alt="Château de Chambord" />
+                      <span>Château de Chambord</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/place-plumereau.jpg"
+                        alt="Place Plumerau" />
+                      <span>Place Plumerau</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/rigny-usse.jpg"
+                        alt="Château d'Ussé" />
+                      <span>Château d'Ussé</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/azay.jpg"
+                        alt="Château d'Azay-le-Rideau" />
+                      <span>Château d'Azay-le-Rideau</span>
+                    </div>
+                  
+                    <div>
+                      <img class="img-responsive"
+                        src="/assets/img/about-locale/cave-monplaisir.jpg"
+                        alt="Cave Monplaisir" />
+                      <span>Cave Monplaisir</span>
+                    </div>
+                  
+                  </div>
+                  <p>
+                    Nous recommandons également de visiter un des châteaux du
+                    Val de Loire, tous situés à moins d'une heure. Voici une
+                    petite sélection.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://www.chambord.org/" target="_blank">
+                        Chambord
+                      </a> (1 heure de route):
+                      Le château préféré de Jérémy, selon lui le plus beau de
+                      France au même niveau que Versailles.
+                    </li>
+                    <li>
+                      <a href="http://www.chenonceau.com/index.php/" target="_blank">
+                        Chenonceau
+                      </a> (40 minutes de route):
+                      Le château préféré de Pooja, il traverse le Cher et offre
+                      de magnifiques prises de vues.
+                    </li>
+                    <li>
+                      <a href="http://www.chateaudusse.fr/" target="_blank">
+                        Rigny-Ussé
+                      </a> (40 minutes de route):
+                      Château dans Charles Perauld s'inspira lorsqu'il écrivit
+                      "La Belle au Bois Dormant".
+                    </li>
+                  </ul>
+                  <p>
+                    Le Val de Loire est également parsemé d'innombrabres vignobles.
+                    De nombreux producteurs ont des caves sur les bords de Loire,
+                    vous pouvez simplement vous arréter, déguster et visiter les
+                    caves selon vous préférences. Voici quelques exemples.
+                  </p>
+                  <ul>
+                    <li>
+                      Chinon (40 minutes de route):
+                      ville médiévale, foyer de nombreuses caves et troglodytes.
+                      <a href="http://www.chinon-valdeloire.com/decouvrir/visiter/chinon-et-sa-forteresse/chinon-cite-medievale/chinon-accessible/409619-les-caves-painctes"
+                        target="_blank">
+                        "Les Caves Painctes"
+                      </a> and
+                      <a href="http://cavemonplaisir.fr/" target="_blank">
+                        "La Caves Monplaisir"
+                      </a>. Chinon est connue pour son vin rouge.
+                    </li>
+                    <li>
+                      <a href="http://www.cave-montlouis.com/" target="_blank">Montlouis</a> (20 minutes de route):
+                      Ville connue pour son vin blanc.
+                    </li>
+                    <li>
+                      <a href="http://www.cavedevouvray.com/" target="_blank">Vouvray</a> (20 minutes de route):
+                      Ville connue pour son pétillant.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    
+  <script type="text/javascript" src="/dist/js/all.js"></script>
+
+
+  </body>
+</html>
