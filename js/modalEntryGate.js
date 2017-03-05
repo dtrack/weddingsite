@@ -12,7 +12,8 @@
         window.location.replace("https://google.com");
       });
 
-      $('#entryGateModal').find('#entry-gate-challenge').on('click', function () {
+      $('form[name=jnp-form-gate]').submit(function (event) {
+        event.preventDefault();
         var password = $('#entryGateModal').find('input[type=password]').val();
 
         $.ajax(
