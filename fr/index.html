@@ -42,28 +42,30 @@
 <div class="modal fade" id="entryGateModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="entryGateModalLabel">
-          <i class="fa fa-lock" aria-hidden="true"></i>
-          Accès Protégé
-        </h4>
-      </div>
-      <div class="modal-body">
-        <div class="alert alert-danger display_none" id="challengeFailed" role="alert">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          Mot de passe incorrect. Vérifier votre série en respectant majuscules et minuscules.
+      <form name="jnp-form-gate" >
+        <div class="modal-header">
+          <h4 class="modal-title" id="entryGateModalLabel">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            Accès Protégé
+          </h4>
         </div>
-        <p>Saisissez le mot de passe pour entrer.</p>
-        <p class='jnp-mdp'>
-          <input type="password" name="password">
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn" id="entry-gate-leave">Quitter</button>
-        <button type="button" class="btn btn-primary" id="entry-gate-challenge">Entrer</button>
-      </div>
+        <div class="modal-body">
+          <div class="alert alert-danger display_none" id="challengeFailed" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            Mot de passe incorrect. Vérifier votre série en respectant majuscules et minuscules.
+          </div>
+          <p>Saisissez le mot de passe pour entrer.</p>
+          <p class='jnp-mdp'>
+            <input type="password" name="password">
+          </p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" id="entry-gate-leave">Quitter</button>
+            <button type="submit" class="btn btn-primary" id="entry-gate-challenge">Entrer</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
