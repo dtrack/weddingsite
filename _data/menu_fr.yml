@@ -4,10 +4,10 @@
 - name: Programme
   link: /fr/programme
   fa_icon: calendar
-- name: Gallerie
-  link: /fr/gallerie
+- name: Galerie
+  link: /fr/galerie
   fa_icon: camera
-- name: Visiter Tours 
+- name: Visiter Tours
   link: /fr/visiter-tours
   fa_icon: globe
 - name: RSVP & Contact
