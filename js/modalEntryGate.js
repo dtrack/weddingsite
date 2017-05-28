@@ -2,18 +2,18 @@
   'use strict';
 
   var getIsAuthed = function () {
-    if (localStorage.isAuthed == 1) {
+    if (document.cookie.indexOf('isAuthed=1') > -1) {
       return true;
     }
-    if (document.cookie.indexOf('isAuthed=1') > -1) {
+    if (localStorage.isAuthed == 1) {
       return true;
     }
     return false;
   };
 
   var setIsAuthed = function () {
-    localStorage.isAuthed = 1;
     document.cookie = 'isAuthed=1';
+    localStorage.isAuthed = 1;
   };
 
   $(document).on('ready', function () {
