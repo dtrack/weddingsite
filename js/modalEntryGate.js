@@ -1,11 +1,26 @@
 (function ($) {
   'use strict';
 
+  var getIsAuthed = function () {
+    if (localStorage.isAuthed == 1) {
+      return true;
+    }
+    if (document.cookie.indexOf('isAuthed=1') > -1) {
+      return true;
+    }
+    return false;
+  };
+
+  var setIsAuthed = function () {
+    localStorage.isAuthed = 1;
+    document.cookie = 'isAuthed=1';
+  };
+
   $(document).on('ready', function () {
 
     var CHALLENGE_URL = 'https://script.google.com/macros/s/AKfycbx9949hQnjvKS1xubRM9pzFz5hXSgFKO7a4i13-dkSCYuWNpHIi/exec';
 
-    if (!localStorage.isAuthed == 1) {
+    if (!getIsAuthed()) {
       $('#entryGateModal').modal();
 
       $('#entryGateModal').find('#entry-gate-leave').on('click', function () {
@@ -21,7 +36,7 @@
         ).success(function (data) {
           if (data.success) {
             $('#entryGateModal').modal('hide');
-            localStorage.isAuthed = 1;
+            setIsAuthed();
           }
           else {
             $('#challengeFailed').show();
