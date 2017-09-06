@@ -2,6 +2,8 @@
   'use strict';
 
   var getIsAuthed = function () {
+    // deactivating auth
+    return true;
     if (document.cookie.indexOf('isAuthed=1') > -1) {
       return true;
     }
